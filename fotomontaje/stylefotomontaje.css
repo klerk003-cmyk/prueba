@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    padding: 20px;
+}
+
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menu-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown {
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: azure;
+    text-align: right;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.image-container {
+    width: 30%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    background-color: rgb(17, 17, 17);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 40px);
+    text-align: center;
+    color:azure;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.gallery-item p {
+    margin-top: 8px;
+    font-size: 1em;
+    color: azure;
+}
+
+/* Hover en imágenes con un ligero zoom */
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+/* Estilo del lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.5s ease; /* Transición para el agrandado */
+    cursor: pointer;
+    position: absolute;
+}
+.lightbox.show {
+    display: flex; /* Mostrar el lightbox cuando se activa */
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+#link-foto {
+    position: absolute;
+    top: 10px; /* Ajusta según lo necesites */
+    left: 10px; /* Ajusta según lo necesites */
+    z-index: 1000;
+}
+
+#foto-pequeña {
+    width: 50px; /* Ajusta el tamaño según lo necesites */
+    height: auto;
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+}
