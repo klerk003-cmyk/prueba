@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+    padding: 20px;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    background-color: #000000;
+}
+
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menu-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown {
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: azure;
+    text-align: right;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.image-container {
+    width: 30%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.photo-container {
+    background-color:rgb(21, 21, 21);
+    border: 1px solid rgb(0, 0, 0.1);
+    border-radius: 8px;
+    width: 30%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.photo-container img:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse por la imagen */
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #606060;
+
+}
+#link-foto {
+    position: absolute;
+    top: 10px; /* Ajusta según lo necesites */
+    left: 10px; /* Ajusta según lo necesites */
+    z-index: 1000;
+}
+
+#foto-pequeña {
+    width: 40px; /* Ajusta el tamaño según lo necesites */
+    height: auto;
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+}
