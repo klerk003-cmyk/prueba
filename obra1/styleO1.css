@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px; /* Espacio entre el contenedor izquierdo y la imagen */
+    position: relative;
+}
+
+.floating-image {
+    position: absolute;
+    top: 5;
+    left: -250px; /* Ajusta según la posición que desees */
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menu-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown {
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: azure;
+    text-align: right;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.image-container {
+    width: 30%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.title {
+    font-size: 25px;
+    margin: 10px 0;
+    text-align: left; /* Alinea el título a la izquierda */
+    color:rgb(255, 255, 255);
+}
+
+.description {
+    font-size: 16px;
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+    text-align: left; /* Alinea la descripción a la izquierda */
+}
+
+.content {
+    position: relative;
+    text-align: center;
+}
+
+.content img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilo para el recuadro flotante del video sobre la imagen */
+.video-box {
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición según tu preferencia */
+    right: -250px;  /* Ajusta la posición según tu preferencia */
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el recuadro */
+}
+#link-foto {
+    position: absolute;
+    top: 10px; /* Ajusta según lo necesites */
+    left: 10px; /* Ajusta según lo necesites */
+    z-index: 1000;
+}
+
+#foto-pequeña {
+    width: 50px; /* Ajusta el tamaño según lo necesites */
+    height: auto;
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+}
