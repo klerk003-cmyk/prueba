@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #000000;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#menu-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown {
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: azure;
+    text-align: right;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea la imagen y la descripción en el centro verticalmente */
+    width: 60%; 
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgb(17, 17, 17);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    flex: 1; /* Asegura que la imagen ocupe una parte significativa del contenedor */
+    padding: 10px;
+}
+
+.description {
+    flex: 1; /* Asegura que la descripción ocupe el espacio restante */
+    text-align: left; /* Alinea el texto a la derecha */
+    display: flex;
+    justify-content:right ; /* Centra horizontalmente el texto */
+    align-items: center; /* Centra verticalmente el texto */
+    font-size: 14px;
+    color: azure;
+    padding: 10px;
+}
+
+/* Estilo para el video */
+.video-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.video-box video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#link-foto {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#foto-pequeña {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
