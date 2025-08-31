@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+header {
+    background-color: #000000;
+    padding: 20px;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menu-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown {
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: azure;
+    text-align: right;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.image-container {
+    width: 70%;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 100px); /* Restar el tamaño del header */
+    padding: 20px;
+    color:azure;
+}
+
+.left, .center, .right {
+    width: 80%;
+    text-align: center;
+    background-color: #000000;
+
+}
+
+img {
+    max-width: 95%;
+    height: auto;
+}
+#link-foto {
+    position: absolute;
+    top: 10px; /* Ajusta según lo necesites */
+    left: 10px; /* Ajusta según lo necesites */
+    z-index: 1000;
+}
+
+#foto-pequeña {
+    width: 50px; /* Ajusta el tamaño según lo necesites */
+    height: auto;
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+}
