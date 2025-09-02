@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #020202;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #000000;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menu-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown {
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: azure;
+    text-align: right;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.media-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: calc(33.333% - 20px);
+    padding:50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 300px; /* Ajusta según lo necesario */
+}
+
+.media-container a {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto */
+}
+
+.media-container video,
+.media-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+p {
+    font-size: 1em;
+    color: azure;
+}
+
+#link-foto {
+    position: absolute;
+    top: 10px; /* Ajusta según lo necesites */
+    left: 10px;
+    display: block;
+}
+
+#foto-pequeña {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
